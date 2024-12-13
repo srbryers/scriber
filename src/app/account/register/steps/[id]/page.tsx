@@ -20,7 +20,7 @@ export default function Page() {
   const handleSubmit = (data: FormObject) => {
     console.log("[handleSubmit] data", data);
     saveFormData(data);
-    router.push(`/account/register/step-${Number(id) + 1}`);
+    router.push(`/account/register/steps/${Number(id) + 1}`);
   }
 
   return formData && step && (

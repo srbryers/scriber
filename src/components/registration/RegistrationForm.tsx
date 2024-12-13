@@ -116,7 +116,7 @@ export default function RegistrationForm({
           <Button type="submit" buttonStyle="primary" buttonSize="lg" disabled={!validForm}>
             Continue
           </Button>
-          <Link href={`/account/register/step-${Number(stepId) - 1}`} className="text-sm text-gray-500">
+          <Link href={`/account/register/steps/${Number(stepId) - 1}`} className="text-sm text-gray-500">
             Back
           </Link>
         </div>
