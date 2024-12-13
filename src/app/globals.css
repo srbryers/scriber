@@ -3,16 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F7F9FD;
+  --foreground: #232D42;
+
+  /* Colors: Primary */
+  --color-primary: #344A76;
+  --color-primary-900: #232D42;
+  --color-primary-800: #2B3850;
+  --color-primary-600: #2A3F69;
+  --color-primary-500: #344A76;
+  --color-primary-400: #445A88;
+  --color-primary-300: #4269B6;
+  --color-primary-200: #EAF1FF;
+  --color-primary-100: #F7F9FD;
+  --color-primary-50: #f9fafb;
+
+  /* Colors: Secondary */
+  --color-secondary: #E03364;
+  --color-secondary-900: #2C010D;
+  --color-secondary-800: #5C001A;
+  --color-secondary-700: #9D0732;
+  --color-secondary-600: #C21B4B;
+  --color-secondary-500: #E03364;
+  --color-secondary-400: #E6527C;
+  --color-secondary-300: #F88BAA;
+  --color-secondary-200: #F2A7B9;
+  --color-secondary-100: #FFE8EE;
+  --color-secondary-50: #fdf2f6;
+
+  /* Colors: Tertiary */
+  --color-tertiary: #F2C830;
+  --color-tertiary-900: #332D29;
+  --color-tertiary-800: #4D4845;
+  --color-tertiary-600: #66625F;
+  --color-tertiary-500: #F2C830;
+  --color-tertiary-400: #F4D55D;
+  --color-tertiary-300: #F7E18C;
+  --color-tertiary-200: #F9F0B5;
+  --color-tertiary-100: #FCF8D4;
+  --color-tertiary-50: #fefce8;
+
+  /* Colors: Input */
+  --input-bg: #FFF;
+  --input-border: #E0E0E0;
+  --input-border-focus: #344A76;
+  --input-text: #232D42;
+  --input-error: #E03364;
 }
 
+/* @TODO: Implement dark mode */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-primary-900);
+    --foreground: #F7F9FD;
+
+    --input-bg: var(--color-primary-900);
+    --input-border: var(--foreground);
+    --input-border-focus: white;
+    --input-text: var(--foreground);
+    --input-error: var(--color-secondary-600);
+
+    --color-primary: #344A76;
+    --color-primary-900: #232D42;
+    --color-primary-800: #2B3850;
+    --color-primary-600: #2A3F69;
+    --color-primary-500: #344A76;
+    --color-primary-400: #445A88;
+    --color-primary-300: #4269B6;
+    --color-primary-200: #EAF1FF;
+    --color-primary-100: #F7F9FD;
+    --color-primary-50: #f9fafb;
   }
 }
+*/
 
 body {
   color: var(--foreground);
