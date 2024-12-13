@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   rewrites: async () => {
     return [
       {
-        source: "/account/register/step-:id*",
+        source: "/account/register/step\\-:id*",
         destination: "/account/register/step/:id*",
       },
     ];
