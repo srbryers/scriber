@@ -66,7 +66,7 @@ export default function Dropdown(props: DropdownProps) {
               id={`dropdown-value-${option.value}`}
               onChange={(e) => {
                 console.log("[onChange] e", e);
-                props.onChange && props.onChange(e)
+                if (props.onChange) props.onChange(e)
                 setIsOpen(false)
                 setSelectedOption(option)
               }}
